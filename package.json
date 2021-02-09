@@ -1,0 +1,25 @@
+{
+  "name": "@schirrel/simple-storage",
+  "version": "1.0.0",
+  "description": "Simplify the localstorage use  ",
+  "main": "SimpleStorage.js",
+  "scripts": {
+    "test": "echo \"No tests here\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schirrel/SimpleStorage.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "schirrel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schirrel/SimpleStorage/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/schirrel/SimpleStorage#readme"
+}
