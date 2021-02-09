@@ -6,12 +6,12 @@ export default class SimpleStorage {
     }
 
     static has(key) {
-        return !!Storage.parse(window.localStorage.getItem(key));
+        return !!SimpleStorage.parse(window.localStorage.getItem(key));
     }
     static get(key) {
         return new Promise((resolve, reject) => {
             try {                
-                resolve(Storage.parse(window.localStorage.getItem(key)));
+                resolve(SimpleStorage.parse(window.localStorage.getItem(key)));
             } catch (err) {
                 reject(err);
             }
@@ -21,7 +21,7 @@ export default class SimpleStorage {
     static set(key, value) {
         return new Promise((resolve, reject) => {
             try {
-                window.localStorage.setItem(key, Storage.parse(value, true));
+                window.localStorage.setItem(key, SimpleStorage.parse(value, true));
                 resolve();
             } catch (err) {
                 reject(err);
