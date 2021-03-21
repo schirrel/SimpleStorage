@@ -1,10 +1,10 @@
 {
   "name": "@schirrel/simple-storage",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Simplify the localstorage use  ",
   "main": "SimpleStorage.js",
   "scripts": {
-    "test": "echo \"No tests here\""
+    "babel": "babel --presets es2015 SimpleStorage.js -o dist/SimpleStorage.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,10 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "homepage": "https://github.com/schirrel/SimpleStorage#readme"
+  "homepage": "https://github.com/schirrel/SimpleStorage#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
